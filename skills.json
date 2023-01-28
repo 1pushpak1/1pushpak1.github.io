@@ -1,0 +1,88 @@
+[
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"
+    },
+    
+    
+    {
+        "name": "C#",
+        "icon": "https://img.icons8.com/color/48/null/c-sharp-logo-2.png"
+    },
+    
+     {
+        "name": "C",
+        "icon": "https://img.icons8.com/color/48/null/c-programming.png"
+    },
+    
+     {
+        "name": "PYTHON",
+        "icon": "https://img.icons8.com/color/48/null/python--v1.png"
+    },
+    
+     {
+        "name": "Respbian",
+        "icon": "https://img.icons8.com/color/48/null/raspberry-pi.png"
+    },
+    
+     {
+        "name": "Office 365",
+        "icon": "https://img.icons8.com/color/48/null/office-365.png"
+    },
+     {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+     {
+        "name": "Azure",
+        "icon": "https://img.icons8.com/color/48/null/azure-1.png"
+    },
+     {
+        "name": "Google Cloud",
+        "icon": "https://img.icons8.com/color/48/null/google-cloud.png"
+    },
+  
+       {
+        "name": "Selenium",
+        "icon": "https://img.icons8.com/officel/40/null/selenium-test-automation.png"
+    },
+    
+     {
+        "name": "Github",
+        "icon": "https://img.icons8.com/color/48/null/github--v1.png"
+    },
+     {
+        "name": "Adobe PS",
+        "icon": "https://img.icons8.com/color-glass/48/null/adobe-photoshop.png"
+    },
+    
+     {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/fluency/48/null/canva.png"
+    },
+    
+     {
+        "name": "After effects",
+        "icon": "https://img.icons8.com/color/48/null/adobe-after-effects--v1.png"
+    },
+    
+    {
+        "name": "Visual Studio",
+        "icon": "https://img.icons8.com/color/48/null/visual-studio--v1.png"
+    },
+    
+    {
+        "name": "VS Code",
+        "icon": "https://img.icons8.com/color/48/null/visual-studio-code-2019.png"
+    },
+    
+    {
+        "name": "Xcode",
+        "icon": "https://img.icons8.com/color/48/null/xcode.png"
+    },
+    
+     {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/fluency/48/null/figma.png"
+    }
+]
