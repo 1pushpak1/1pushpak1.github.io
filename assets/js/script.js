@@ -146,6 +146,38 @@ function showProjects(projects) {
 
 }
 
+/* certificate*/
+function showCertificates(certificates){
+
+    let certificatesContainer = document.querySelector("#certificate .box-container");
+    let certificateHTML = "";
+    certificates.slice(0, 10).filter(certificate => certificate.category != "android").forEach(certificate => {
+        certificateHTML += `
+        <div class="box tilt">
+      <img draggable="false" src="/assets/images/certificates/${certificate.image}.png" alt="certificate" />
+      <div class="content">
+        <div class="tag">
+        <h3>${certificate.name}</h3>
+        </div>
+         </div>
+    </div>`
+    });
+    certificatesContainer.innerHTML = certificatetHTML;
+
+      /* ===== SCROLL REVEAL ANIMATION ===== */
+      const srtop = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 1000,
+        reset: true
+    });
+
+    /* SCROLL PROJECTS */
+    srtop.reveal('.certificate .boxes', { interval: 200 });
+}
+
+
+
 fetchData().then(data => {
     showSkills(data);
 });
@@ -153,7 +185,9 @@ fetchData().then(data => {
 fetchData("projects").then(data => {
     showProjects(data);
 });
-
+fetchData("certificates").then(data => {
+    showCertificates(data);
+});
 // <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
@@ -246,6 +280,9 @@ srtop.reveal('.work .box', { interval: 200 });
 /* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
+
+/* SCROLL Certificates */
+srtop.reveal('.certificate .boxes', { interval: 200 });
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
