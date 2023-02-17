@@ -126,7 +126,19 @@ function showProjects(projects) {
     </div>`
     });
     projectsContainer.innerHTML = projectHTML;
-
+ 
+ function showCerificates(certificates) {
+    let projectsContainer = document.querySelector("#certificates .box-container");
+    let projectHTML = "";
+  {
+        projectHTML += `
+        <div class="box tilt">
+      <img draggable="false" src="/assets/images/certificates/${certificates.image}.png" alt="caertificates" />
+         
+      
+    </div>`
+    });
+    certificatesContainer.innerHTML = certificatesHTML;
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
@@ -242,7 +254,8 @@ srtop.reveal('.education .box', { interval: 200 });
 
 /* SCROLL PROJECTS */
 srtop.reveal('.work .box', { interval: 200 });
-
+/* SCROOL CERTIFICATES*/
+srtop.reveal('.work1 .box1', { interval: 200 });
 /* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
