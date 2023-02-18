@@ -199,7 +199,7 @@ header .navbar ul li a:hover{
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  margin: 18rem;
+  margin: 12rem;
 }
 .certificate .box-container .box{
   flex:1 1 30rem;
