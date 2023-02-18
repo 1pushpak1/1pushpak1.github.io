@@ -198,8 +198,8 @@ header .navbar ul li a:hover{
 .certificate .box-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 12rem;
+  gap: 4rem;
+  margin: 18rem;
 }
 .certificate .box-container .box{
   flex:1 1 30rem;
