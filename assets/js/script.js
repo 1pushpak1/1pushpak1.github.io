@@ -79,16 +79,19 @@ var typed = new Typed(".typing-text", {
 });
 // <!-- typed js effect ends -->
 
-async function fetchData(type = "skills") {
-    let response
-    type === "skills" ?
-        response = await fetch("skills.json")
-        :
-        response = await fetch("./projects/projects.json")
-        
+async function fetchData(type) {
+    let response;
+    if (type === "projects") {
+      response = await fetch("./projects/projects.json");
+    } else if (type === "certificate") {
+      response = await fetch("./certificates/certificates.json");
+    } else {
+      response = await fetch("skills.json");
+    }
+  
     const data = await response.json();
-    return data;
-}
+    return data;
+  }
 
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
@@ -284,7 +287,7 @@ srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
 
 /* SCROLL Certificates */
-srtop.reveal('.certificate .boxes', { interval: 200 });
+srtop.reveal('.certificate .box', { interval: 200 });
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
