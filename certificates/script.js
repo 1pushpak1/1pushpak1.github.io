@@ -93,8 +93,8 @@ function showCertificates(certificates) {
     });
 }
 
-getProjects().then(data => {
-    showProjects(data);
+getCertificates().then(data => {
+    showCertificates(data);
 })
 // fetch projects end
 

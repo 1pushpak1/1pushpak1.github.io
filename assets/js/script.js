@@ -154,7 +154,7 @@ function showCertificates(certificates){
     certificates.slice(0, 10).filter(certificate => certificate.category != "android").forEach(certificate => {
         certificateHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/certificates/${certificate.image}.png" alt="certificate" />
+      <img draggable="false" src="/assets/images/projects/${certificate.image}.png" alt="certificate" />
       <div class="content">
         <div class="tag">
         <h3>${certificate.name}</h3>
@@ -162,7 +162,7 @@ function showCertificates(certificates){
          </div>
     </div>`
     });
-    certificatesContainer.innerHTML = certificatetHTML;
+    certificatesContainer.innerHTML = certificateHTML;
 
       /* ===== SCROLL REVEAL ANIMATION ===== */
       const srtop = ScrollReveal({
@@ -173,9 +173,8 @@ function showCertificates(certificates){
     });
 
     /* SCROLL PROJECTS */
-    srtop.reveal('.certificate .boxes', { interval: 200 });
+    srtop.reveal('.certificate .box', { interval: 200 });
 }
-
 
 
 fetchData().then(data => {
@@ -185,9 +184,11 @@ fetchData().then(data => {
 fetchData("projects").then(data => {
     showProjects(data);
 });
+
 fetchData("certificates").then(data => {
     showCertificates(data);
 });
+
 // <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,

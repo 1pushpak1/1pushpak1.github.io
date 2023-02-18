@@ -933,17 +933,18 @@ header .navbar ul li a:hover {
 /* experience section ends */
 
 /* certificates section starts*/
+/* certificates section starts*/
 .certificate {
   /* background: #010124; */
   background: rgb(45,129,253);
   background: linear-gradient(0deg, rgba(45,129,253,1) 0%, rgba(34,43,195,1) 100%);
 } 
 .certificate h2 {
-  color: #fff;
+  color: #f8f8f8;
   padding: 1rem;
 }
 .certificate .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(246, 222, 6)
 }
 .certificate .box-container {
   display: flex;
@@ -951,30 +952,30 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   margin: 2rem;
 }
-.certificate .box-container .boxes {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
+.certificate .box-container .box {
+  flex: 5 5 30rem;
+  border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 30rem;
+  height: 25rem;
 }
-.certificate .box-container .boxes img {
+.certificate .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.certificate .box-container .boxes .content {
+.certificate .box-container .box .content {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 83%;
   left: 0;
   background: rgba(160, 157, 157, 0.9);
   display: flex;
   flex-direction: column;
 }
-.certificate .box-container .boxes .content .tag {
+.certificate .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -984,11 +985,11 @@ header .navbar ul li a:hover {
   padding-left: 1rem;
   background: #ffd900;
 }
-.certificate .box-container .boxes .content .tag h3 {
+.certificate .box-container .box .content .tag h3 {
   font-size: 2rem;
 }
-.certificate .box-container .boxes:hover .content {
-  top: 25%;
+.certificate .box-container .box:hover .content {
+  top: 100%;
 }
 .certificate .desc {
   margin: 2rem;
@@ -1016,7 +1017,7 @@ header .navbar ul li a:hover {
   margin-right: 2rem;
 }
 .certificate .desc .btns .btn:hover {
-  background: #310ae0f5;
+  background: #2506ad ;
 }
 .certificate .viewalls {
   display: flex;
@@ -1026,11 +1027,12 @@ header .navbar ul li a:hover {
   position: relative;
   line-height: 0;
   padding: 1.6rem 3rem;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   transition: 0.5s;
   color: rgb(255, 255, 255);
   font-weight: 700;
-  border: 2px solid #fff;
+  border: 2px solid #2506ad;
+  background: #2506ad;
   box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
   text-align: center;
 }
@@ -1045,13 +1047,15 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .certificate .viewalls .btn:hover {
-  background: #fff;
-  color: #000;
+  background: #1a047e;
+  color: #ffffff;
 }
 .certificate .viewalls .btn:hover i {
   transform: translateX(5px);
 }
 */
+
+/* certificate section ends*/
 
 /* certificate section ends*/
 /* contact section starts */
