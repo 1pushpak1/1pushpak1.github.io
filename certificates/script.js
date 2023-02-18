@@ -32,7 +32,7 @@ document.addEventListener('visibilitychange',
 
 // fetch projects start
 function getCertificates() {
-    return fetch("certificates.json")
+    return fetch("./certificates.json")
         .then(response => response.json())
         .then(data => {
             return data
