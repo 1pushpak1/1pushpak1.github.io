@@ -85,6 +85,7 @@ async function fetchData(type = "skills") {
         response = await fetch("skills.json")
         :
         response = await fetch("./projects/projects.json")
+        
     const data = await response.json();
     return data;
 }
@@ -154,7 +155,7 @@ function showCertificates(certificates){
     certificates.slice(0, 10).filter(certificate => certificate.category != "android").forEach(certificate => {
         certificateHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${certificate.image}.png" alt="certificate" />
+      <img draggable="false" src="/assets/images/certificates/${certificate.image}.png" alt="certificate" />
       <div class="content">
         <div class="tag">
         <h3>${certificate.name}</h3>
@@ -185,7 +186,7 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-fetchData("certificates").then(data => {
+fetchData("certificate").then(data => {
     showCertificates(data);
 });
 

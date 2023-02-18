@@ -958,7 +958,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 25rem;
+  height: 30rem;
 }
 .certificate .box-container .box img {
   height: 100%;
@@ -969,7 +969,7 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 83%;
+  top: 85%;
   left: 0;
   background: rgba(160, 157, 157, 0.9);
   display: flex;
