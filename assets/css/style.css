@@ -1348,6 +1348,6 @@ form .button-area {
   z-index: 1000;
 }
 #scroll-top.active {
-  top: calc(100% - 12rem);
+  top: calc(100% - 6rem);
 }
 /* scroll top ends */
