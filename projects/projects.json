@@ -51,9 +51,9 @@
     }
   },
   {
-    "name": "Wait For Next",
-    "desc": "Wait......",
-    "image": "wait",
+    "name": "Sign Language ML Model",
+    "desc": "Video Calling app for deafends to convert sign language into caption.",
+    "image": "videoapp",
     "category": "mern",
     "links": {
       "view": "#",
