@@ -1,13 +1,13 @@
 [
   
     {
-    "name": "Student Management",
-    "desc": "Basic Student management program for schools using c++ only backend without UI.",
-    "image": "student",
+    "name": "Skin Disease Detection ML Model",
+    "desc": "This Machine Learning model detects the skin disease.",
+    "image": "skin",
     "category": "mern",
     "links": {
-      "view": "https://github.com/1pushpak1/Student-Management",
-      "code": "https://github.com/1pushpak1/Student-Management"
+      "view": "#",
+      "code": "#"
     }
   },
   {
